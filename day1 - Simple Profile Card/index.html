@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .profile-card{
+        width: 350px;
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        position: absolute;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .cover img{
+        width: 100%;
+        height: 140px;
+        object-fit: cover;
+    }
+    .profile{
+        position: absolute;
+        top: 90px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .profile img{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        border: 4px solid #fff;
+    }
+    .content{
+        padding: 60px 20px 20px;
+        text-align: center;
+    }
+    .bio{
+        font-size: 14px;
+        color: #666;
+        margin: 10px 0 15px;
+    }
+    .info{
+        display: flex;
+        justify-content: space-between;
+        color: #555;
+        margin-bottom: 15px;
+    }
+    .stats{
+        display: flex;
+        border-top: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+    }
+    .stats div{
+        flex: 1;
+        padding: 15px 0;
+    }
+    .follow-btn{
+        width: 100%;
+        padding: 12px;
+        background: #6cc07f;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 0 0 12px 12px;
+    }
+    .follow-btn:hover{
+        color: #00330c;
+        cursor: pointer;
+
+    }
+</style>
+<body>
+
+<div class="profile-card">
+
+    <!-- cover image -->
+    <div class="cover">
+        <img src="https://plus.unsplash.com/premium_photo-1661962542692-4fe7a4ad6b54?w=1000" alt="cover">
+    </div>
+
+    <!-- profile image -->
+    <div class="profile">
+        <img src="=data:image/webp;base64,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" alt="profile">
+    </div>
+
+    <!-- content -->
+    <div class="content">
+        <h2>Ann Lovefully</h2>
+
+        <p class="bio">
+            Designer, cat lover, bookworm apple pie fanatic and nature enthusiast :)
+        </p>
+
+        <div class="info">
+            <span>📍 Hungary</span>
+            <span>✉️ Send E-mail</span>
+        </div>
+
+        <div class="stats">
+            <div>
+                <h3>8,100</h3>
+                <p>Followers</p>
+            </div>
+            <div>
+                <h3>3,650</h3>
+                <p>Following</p>
+            </div>
+        </div>
+
+        <button id="follow" class="follow-btn">Follow</button>
+    </div>
+
+</div>
+
+</body>
+</html>
