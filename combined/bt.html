@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f2f2f2;
+        }
+
+        .profile-card{
+            width: 320px;
+            height: 600px;
+            background-color: yellowgreen;
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header-bg{
+            height: 50px;
+            background-color: #333;
+            border-radius: 15px 15px 0 0;
+            margin: -20px -20px 50px -20px;
+            
+        }
+
+        .photo img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid white;
+            margin-top: -30px;
+            background: white;
+        }
+
+        .name h1{
+            font-size: 1.3rem;
+            margin-top: 10px;
+            color: #222;
+        }
+
+        .stats{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 150px;
+        }
+
+        .stats div{
+            text-align: center;
+        }
+
+        .stats h2{
+            font-size: 1.1rem;
+            color: #222;
+        }
+
+        .stats p{
+            font-size: 0.8rem;
+            color: #444;
+            
+        }
+        .graph{
+            font-size: 14px;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="profile-card">
+
+        <div class="header-bg">
+            <h1>Cool</h1>
+        </div>
+
+        <div class="photo">
+            <img src="https://plus.unsplash.com/premium_vector-1682305419297-736253d75780?w=600" alt="profile">
+        </div>
+
+        <div class="name">
+            <h1>Akshit Jamwal</h1>
+        </div>
+        <p class="graph">
+            I am Akshit Jamwal, a BCA student with a strong interest in web development. I enjoy learning HTML, CSS, and JavaScript and love building small projects to improve my skills. I am focused on growing as a frontend developer and aim to gain real-world experience through internships and continuous practice.
+        </p>
+
+        <div class="stats">
+            <div>
+                <h2>120</h2>
+                <p>Posts</p>
+            </div>
+            <div>
+                <h2>5K</h2>
+                <p>Followers</p>
+            </div>
+            <div>
+                <h2>300</h2>
+                <p>Following</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

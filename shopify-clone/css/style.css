@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px 60px;
+    border-bottom: 1px solid #eee;
+    justify-content: center;
+
+}
+.logo svg {
+    height: 32px;
+    
+}
+
+.hero{
+    height: 100vh;
+    background: url("../images/background.webp") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.hero-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.hero-card {
+    background: white;
+    padding: 40px 48px;
+    border-radius: 28px;
+    max-width: 520px;
+    text-align: center;
+
+
+}
+.hero-content h1 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+.hero-content p{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.cta-card {
+    background: #0b0b0b;
+    color: #ffffff;
+    padding: 28px;
+    border-radius: 22px;
+    width: 520px;
+    
+
+}
+.cta-card h3{
+    font-size: 18px;
+    margin-bottom: 12px;
+
+}
+
+.email-box input {
+    flex: 1;
+    padding: 14px 18px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #ffffff;
+    font-size: 16px;
+}
+.email-box input::placeholder{
+    color: #aaa;
+}
+.email-box button{
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 22px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+.email-box button:hover{
+    opacity: 0.7;
+}
+.cta-card small{
+    font-size: 12px;
+    color: #aaa;
+}
+
+@media (max-width: 768px) {
+    header{
+        padding: 16px 24px;
+    }
+    .hero-card{
+        padding: 32px 28px;
+    }
+    .hero-card h1{
+        font-size: 28px;
+    }
+    .hero-card p{
+        font-size: 16px;
+    }
+    .cta-card {
+        padding: 24px;
+    }
+}
+@media (max-width: 480px) {
+    .hero-card h1{
+        font-size: 24px;
+    }
+    .email-box input {
+        font-size: 14px;
+    }
+}
